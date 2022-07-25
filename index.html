@@ -247,10 +247,117 @@
       </div>
     </div>
   </section>
+   
+   <!-- Progress Bar & Tasklist  -->
+<section>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-xl-10 col-lg-9 col-md-8 mr-auto">
+      <div class="row">
+        <!-- Progress  -->
+        <div class="col-md-6">
+          <div class="bg-dark text-light p-4 rounded ">
+            <h4 class="mb-4">پروزه ها</h4>
+            <h6 class="mb-2 mt-4"> کتابخانه آنلاین</h6>
+            <div class="progress" style="height: 30px;">
+              <div class="progress-bar font-weight-bold bg-danger progress-bar-striped w-75">75 درصد</div>
+            </div>
+            <h6 class="mb-2 mt-4"> وب اپلیکیشن آنلاین</h6>
+            <div class="progress" style="height: 30px;">
+              <div class="progress-bar font-weight-bold bg-info progress-bar-striped w-25">75 درصد</div>
+            </div>
+            <h6 class="mb-2 mt-4">اپلیکیشن فروشگاهی </h6>
+            <div class="progress" style="height: 30px;">
+              <div class="progress-bar font-weight-bold bg-warning progress-bar-striped w-50">75 درصد</div>
+            </div>
+
+
+          </div>
+        </div>
+        <!-- Tasklist  -->
+      <div class="col-md-6">
+        <h4 class="text-muted p-3 mb-2"> تسک ها</h4>
+        <!-- Task  -->
+        <div class="container-fluid bg-light">
+          <div class="row py-3 mb-3 align-content-center border-end border-danger">
+            <div class="col-1">
+              <input   type="checkbox" checked>
+            </div>
+            <div class="col-9 fs-5">
+              آماده کردن بک ند سایت
+            </div>
+            <div class="col-1">
+              <a href="" data-bs-toggle="tooltip"  data-bs-placement="top" data-bs-title="ویرایش">
+                <i class="bi bi-pencil-square fs-4 text-info ml-2"></i>
+              </a>
+            </div>
+            <div class="col-1">
+              <a href="" data-bs-toggle="tooltip"  data-bs-placement="top" data-bs-title="حذف">
+                <i class="bi bi-trash text-danger fs-4 ml-2"></i>
+              </a>
+            </div>
+            <div class="col-1"></div>
+
+          </div>
+        </div>
+        <div class="container-fluid bg-light">
+          <div class="row py-3 mb-3 align-content-center border-end border-danger">
+            <div class="col-1">
+              <input type="checkbox" >
+            </div>
+            <div class="col-9 fs-5">
+              آماده کردن بک ند سایت
+            </div>
+            <div class="col-1">
+              <a href="" data-bs-toggle="tooltip"  data-bs-placement="top" data-bs-title="ویرایش">
+                <i class="bi bi-pencil-square fs-4 text-info ml-2"></i>
+              </a>
+            </div>
+            <div class="col-1">
+              <a href="" data-bs-toggle="tooltip"  data-bs-placement="top" data-bs-title="حذف">
+                <i class="bi bi-trash text-danger fs-4 ml-2"></i>
+              </a>
+            </div>
+            <div class="col-1"></div>
+
+          </div>
+        </div>
+        <div class="container-fluid bg-light">
+          <div class="row py-3 mb-3 align-content-center border-end border-danger">
+            <div class="col-1">
+              <input type="checkbox" >
+            </div>
+            <div class="col-9 fs-5">
+              آماده کردن بک ند سایت
+            </div>
+            <div class="col-1">
+              <a href="" data-bs-toggle="tooltip"  data-bs-placement="top" data-bs-title="ویرایش">
+                <i class="bi bi-pencil-square fs-4 text-info ml-2"></i>
+              </a>
+            </div>
+            <div class="col-1">
+              <a href="" data-bs-toggle="tooltip"  data-bs-placement="top" data-bs-title="حذف">
+                <i class="bi bi-trash text-danger fs-4 ml-2"></i>
+              </a>
+            </div>
+            <div class="col-1"></div>
+
+          </div>
+        </div>
+        <!--End Task  -->
+      </div>
+      </div>
+    </div>
+  </div> 
+  </div>
+  
+</section>
+
  
 
   
     <!-- Js code  -->
+   
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
       integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
@@ -261,5 +368,9 @@
       integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+      </script>
   </body>
 </html>
